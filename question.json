@@ -1,0 +1,915 @@
+{
+    "I. ON-BOARDING": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "I. ON-BOARDING"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. Nh\u00e2n vi\u00ean m\u1edbi c\u1ea7n l\u00e0m nh\u1eefng g\u00ec?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. Email Telio v\u00e0 t\u00e0i kho\u1ea3n 1office c\u1ee7a t\u00f4i?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. T\u00f4i c\u1ea7n h\u1ed7 tr\u1ee3 v\u1ec1 kh\u00f3a h\u1ecdc E-Learn \u0110\u00e0o t\u1ea1o h\u1ed9i nh\u1eadp",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "4 V\u1ec1 th\u1ee7 t\u1ee5c onboard nh\u00e2n vi\u00ean m\u1edbi?",
+                                "emoji": true
+                            },
+                            "value": "value-3"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "5. B\u1ed9 h\u1ed3 s\u01a1 nh\u00e2n s\u1ef1 g\u1ed3m nh\u1eefng g\u00ec?",
+                                "emoji": true
+                            },
+                            "value": "value-4"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "6. C\u00f4ng ty thanh to\u00e1n l\u01b0\u01a1ng nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-5"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "7. T\u00f4i ph\u1ea3i th\u00f4ng b\u00e1o STK Ng\u00e2n h\u00e0ng cho ai?",
+                                "emoji": true
+                            },
+                            "value": "value-6"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "8. L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 t\u00ecm S\u1ed1 \u0111i\u1ec7n tho\u1ea1i v\u00e0 Email c\u1ee7a \u0111\u1ed3ng nghi\u1ec7p?",
+                                "emoji": true
+                            },
+                            "value": "value-7"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "9. C\u00e1ch s\u1eed d\u1ee5ng slack?",
+                                "emoji": true
+                            },
+                            "value": "value-8"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "10. Khi n\u00e0o t\u00f4i s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c l\u01b0\u01a1ng?",
+                                "emoji": true
+                            },
+                            "value": "value-9"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "II. NGH\u1ec8 VI\u1ec6C": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "II. NGH\u1ec8 VI\u1ec6C"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. Th\u1ee7 t\u1ee5c ngh\u1ec9 vi\u1ec7c nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. Khi n\u00e0o t\u00f4i nh\u1eadn \u0111\u01b0\u1ee3c th\u00e1ng l\u01b0\u01a1ng cu\u1ed1i c\u00f9ng?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. Th\u1ee7 t\u1ee5c h\u01b0\u1edfng B\u1ea3o hi\u1ec3m th\u1ea5t nghi\u1ec7p?",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "4. T\u00f4i c\u00f3 \u0111\u01b0\u1ee3c thanh to\u00e1n ti\u1ec1n cho ng\u00e0y ph\u00e9p c\u00f2n l\u1ea1i?",
+                                "emoji": true
+                            },
+                            "value": "value-3"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "5. T\u00f4i s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c s\u1ed5 BHXH \u0111\u00e3 ch\u1ed1t khi n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-4"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "III. \u0110I\u1ec0U CHUY\u1ec2N, TH\u0102NG CH\u1ee8C": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "III. \u0110I\u1ec0U CHUY\u1ec2N, TH\u0102NG CH\u1ee8C"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. Th\u1ee7 t\u1ee5c \u0111i\u1ec1u chuy\u1ec3n nh\u00e2n s\u1ef1 nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. Th\u1ee7 t\u1ee5c th\u0103ng ch\u1ee9c nh\u00e2n s\u1ef1 nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3.  Li\u00ean h\u1ec7 ai khi mu\u1ed1n \u0111\u1ec1 xu\u1ea5t th\u0103ng ch\u1ee9c ho\u1eb7c \u0111i\u1ec1u chuy\u1ec3n?",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "IV. B\u1ea2O HI\u1ec2M, KH\u00c1M CH\u1eeeA B\u1ec6NH": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "IV. B\u1ea2O HI\u1ec2M, KH\u00c1M CH\u1eeeA B\u1ec6NH"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. Danh s\u00e1ch b\u1ec7nh vi\u1ec7n \u0111\u0103ng k\u00fd kh\u00e1m ch\u1eefa b\u1ec7nh?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. Kh\u00e1m b\u1ec7nh th\u00ec \u0111\u01b0\u1ee3c h\u01b0\u1edfng BHYT nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. T\u00f4i \u0111\u00e3 c\u00f3 th\u1ebb BH t\u1ef1 nguy\u1ec7n/theo h\u1ed9 gia \u0111\u00ecnh",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "4. T\u00f4i \u0111\u00e3 mua B\u1ea3o hi\u1ec3m nh\u00e2n th\u1ecd/ B\u1ea3o hi\u1ec3m s\u1ee9c kh\u1ecfe?",
+                                "emoji": true
+                            },
+                            "value": "value-3"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "5. \u0110ang k\u00fd H\u0110L\u0110 v\u00e0 tham gia BHXH t\u1ea1i c\u00f4ng ty kh\u00e1c?",
+                                "emoji": true
+                            },
+                            "value": "value-4"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "6. Sai th\u00f4ng tin tr\u00ean s\u1ed5 BHXH, th\u1ebb BHYT th\u00ec l\u00e0m nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-5"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "7. Thay \u0111\u1ed5i s\u1ed1 CMTND ho\u1eb7c c\u0103n c\u01b0\u1edbc c\u00f4ng d\u00e2n?",
+                                "emoji": true
+                            },
+                            "value": "value-6"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "V. THAI S\u1ea2N": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "V. THAI S\u1ea2N"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. V\u1ec1 ch\u1ebf \u0111\u1ed9 thai s\u1ea3n?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. V\u1ec1 ch\u1ebf \u0111\u1ed9 d\u01b0\u1ee1ng s\u1ee9c sau thai s\u1ea3n?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. T\u00f4i sinh con ho\u1eb7c V\u1ee3 sinh con th\u00ec \u0111\u01b0\u1ee3c h\u01b0\u1edfng quy\u1ec1n l\u1ee3i g\u00ec?",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "VI. THU\u1ebe": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "VI. THU\u1ebe"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. Th\u1ee7 t\u1ee5c \u0111\u0103ng k\u00fd Ng\u01b0\u1eddi ph\u1ee5 thu\u1ed9c?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. T\u1ea1i sao ph\u1ea3i tr\u00edch thu\u1ebf TNCN 10% khi k\u00fd h\u1ee3p \u0111\u1ed3ng",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. C\u00f3 t\u1eeb 2 m\u00e3 s\u1ed1 thu\u1ebf tr\u1edf l\u00ean, c\u1ea7n l\u00e0m th\u1ee7 t\u1ee5c g\u00ec \u0111\u1ec3 g\u1ed9p MST?",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "4. Thay \u0111\u1ed5i s\u1ed1 CMTND c\u00f3 c\u1ea7n thay \u0111\u1ed5i th\u00f4ng tin tr\u00ean MST hay kh\u00f4ng?",
+                                "emoji": true
+                            },
+                            "value": "value-3"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "5. Th\u1ee7 t\u1ee5c t\u1ef1 Quy\u1ebft to\u00e1n thu\u1ebf t\u1ea1i c\u01a1 quan thu\u1ebf nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-4"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "6. L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 tra c\u1ee9u s\u1ed1 thu\u1ebf?",
+                                "emoji": true
+                            },
+                            "value": "value-5"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "VII. CH\u1ea4M C\u00d4NG - T\u00cdNH L\u01af\u01a0NG": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "VII. CH\u1ea4M C\u00d4NG - T\u00cdNH L\u01af\u01a0NG"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. Quy \u0111\u1ecbnh hi\u1ec7n t\u1ea1i v\u1ec1 ch\u1ea5m c\u00f4ng?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. Ai s\u1ebd \u0111\u01b0\u1ee3c mi\u1ec5n ch\u1ea5m c\u00f4ng?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. H\u01b0\u1edbng d\u1eabn t\u1ea1o c\u00e1c lo\u1ea1i \u0111\u01a1n tr\u00ean 1 Office",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "4. H\u01b0\u1edbng d\u1eabn c\u00e1ch duy\u1ec7t \u0111\u01a1n tr\u00ean 1 Office",
+                                "emoji": true
+                            },
+                            "value": "value-3"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "VIII. NG\u00c0Y NGH\u1ec8": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "VIII. NG\u00c0Y NGH\u1ec8"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. T\u00f4i ngh\u1ec9 vi\u1ec7c \u0111\u1ec3 ch\u0103m con \u1ed1m th\u00ec t\u1ea1o \u0111\u01a1n ngh\u1ec9 g\u00ec?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. T\u00f4i ngh\u1ec9 \u1ed1m th\u00ec t\u1ea1o \u0111\u01a1n g\u00ec?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. T\u00f4i l\u00e0m g\u00ec khi kh\u00f4ng t\u1ea1o \u0111\u01b0\u1ee3c \u0111\u01a1n do qu\u00e1 h\u1ea1n 5 ng\u00e0y?",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "4. T\u00f4i mu\u1ed1n xem s\u1ed1 ng\u00e0y ph\u00e9p t\u1ed3n \u0111\u1ebfn th\u1eddi \u0111i\u1ec3m hi\u1ec7n t\u1ea1i?",
+                                "emoji": true
+                            },
+                            "value": "value-3"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "5. T\u00f4i k\u1ebft h\u00f4n th\u00ec \u0111\u01b0\u1ee3c h\u01b0\u1edfng nh\u1eefng quy\u1ec1n l\u1ee3i g\u00ec?",
+                                "emoji": true
+                            },
+                            "value": "value-4"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "6. Quy\u1ec1n l\u1ee3i khi sinh con ho\u1eb7c V\u1ee3 sinh con?",
+                                "emoji": true
+                            },
+                            "value": "value-5"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "7. C\u00f4ng ty c\u00f3 ch\u1ebf \u0111\u1ed9 g\u00ec cho ng\u00e0y sinh nh\u1eadt kh\u00f4ng?",
+                                "emoji": true
+                            },
+                            "value": "value-6"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "8. Gia \u0111\u00ecnh t\u00f4i c\u00f3 ng\u01b0\u1eddi m\u1ea5t, c\u00f4ng ty c\u00f3 ph\u00fac l\u1ee3i g\u00ec kh\u00f4ng?",
+                                "emoji": true
+                            },
+                            "value": "value-7"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "9. T\u00f4i b\u1ecb \u1ed1m \u0111au, tai n\u1ea1n, c\u00f4ng ty c\u00f3 ch\u1ebf \u0111\u1ed9 th\u0103m h\u1ecfi g\u00ec kh\u00f4ng?",
+                                "emoji": true
+                            },
+                            "value": "value-8"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "IX. K\u1ef6 LU\u1eacT LAO \u0110\u1ed8NG": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "IX. K\u1ef6 LU\u1eacT LAO \u0110\u1ed8NG"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. Khi c\u00f3 ph\u00e1t sinh v\u1ec1 k\u1ef7 lu\u1eadt lao \u0111\u1ed9ng c\u1ea7n li\u00ean h\u1ec7 ai?",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. Quy tr\u00ecnh x\u1eed l\u00fd k\u1ef7 lu\u1eadt nh\u01b0 th\u1ebf n\u00e0o?",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. T\u00f4i mu\u1ed1n xem N\u1ed9i quy lao \u0111\u1ed9ng?",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "X. LI\u00caN QUAN \u0110\u1ebeN COVID-19": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "X. LI\u00caN QUAN \u0110\u1ebeN COVID-19"
+            }
+        },
+        {
+            "type": "actions",
+            "block_id": "block",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c c\u00e2u h\u1ecfi t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "1. T\u00f4i l\u00e0 F0",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "2. T\u00f4i l\u00e0 F1",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "3. Khu v\u1ef1c sinh s\u1ed1ng/l\u00e0m vi\u1ec7c b\u1ecb phong t\u1ecfa?",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        }
+                    ],
+                    "action_id": "select"
+                }
+            ]
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ],
+    "Other/C\u00e2u h\u1ecfi kh\u00e1c": [
+        {
+            "type": "input",
+            "label": {
+                "type": "plain_text",
+                "text": "C\u00e2u h\u1ecfi kh\u00e1c",
+                "emoji": true
+            },
+            "block_id": "block_h",
+            "element": {
+                "type": "plain_text_input",
+                "multiline": true,
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "C\u00e2u h\u1ecfi n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c g\u1eedi \u0111\u1ebfn HR",
+                    "emoji": true
+                },
+                "action_id": "other_input"
+            }
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Back/Quay l\u1ea1i",
+                        "emoji": true
+                    },
+                    "value": "click_back",
+                    "action_id": "back"
+                },
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Submit/N\u1ed9p",
+                        "emoji": true
+                    },
+                    "value": "click_submit",
+                    "action_id": "submit"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ]
+}

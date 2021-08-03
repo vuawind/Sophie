@@ -1,0 +1,111 @@
+{
+    "WELCOME_BLOCK": [
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "T\u00ecm c\u00e1c m\u1ee5c t\u1ea1i \u0111\u00e2y",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "I. ON-BOARDING",
+                                "emoji": true
+                            },
+                            "value": "value-0"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "II. NGH\u1ec8 VI\u1ec6C",
+                                "emoji": true
+                            },
+                            "value": "value-1"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "III. \u0110I\u1ec0U CHUY\u1ec2N, TH\u0102NG CH\u1ee8C",
+                                "emoji": true
+                            },
+                            "value": "value-2"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "IV. B\u1ea2O HI\u1ec2M, KH\u00c1M CH\u1eeeA B\u1ec6NH",
+                                "emoji": true
+                            },
+                            "value": "value-3"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "V. THAI S\u1ea2N",
+                                "emoji": true
+                            },
+                            "value": "value-4"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "VI. THU\u1ebe",
+                                "emoji": true
+                            },
+                            "value": "value-5"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "VII. CH\u1ea4M C\u00d4NG - T\u00cdNH L\u01af\u01a0NG",
+                                "emoji": true
+                            },
+                            "value": "value-6"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "VIII. NG\u00c0Y NGH\u1ec8",
+                                "emoji": true
+                            },
+                            "value": "value-7"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "IX. K\u1ef6 LU\u1eacT LAO \u0110\u1ed8NG",
+                                "emoji": true
+                            },
+                            "value": "value-8"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "X. LI\u00caN QUAN \u0110\u1ebeN COVID-19",
+                                "emoji": true
+                            },
+                            "value": "value-9"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "Other/C\u00e2u h\u1ecfi kh\u00e1c",
+                                "emoji": true
+                            },
+                            "value": "other"
+                        }
+                    ],
+                    "action_id": "action_id"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        }
+    ]
+}
