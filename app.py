@@ -48,7 +48,7 @@ def wow():
     }
     write_json(home_tab,"WELCOME_BLOCK",'home.json')
     for i in range(sheets_numb):
-        data = pd.read_excel('chatbot.xlsx',sheet_name=i)
+        data = pd.read_excel('chatbot.xlsx',sheet_name=i,engine='openpyxl')
         dictionary = {
             xl.sheet_names[i]: question_block(xl.sheet_names[i],"block","select")
         }
