@@ -89,7 +89,7 @@ def onboard(event, say, ack, client,body,action):
     val=action["selected_option"]["value"]
     value=int(val[6:])
     data = pd.read_excel('chatbot.xlsx',sheet_name=header,engine='openpyxl')
-    df=pd.DataFrame(data, columns=['answers'],engine='openpyxl')
+    df=pd.DataFrame(data, columns=['answers'])
     ack()
     new=df.iloc[value]['answers'].replace(r'\n', '\n')
     client.chat_postMessage(channel=body['user']['id'], text=f"{new}")
