@@ -6,6 +6,7 @@ from slack import WebClient
 import json
 import random
 import string
+import pandas as pd
 from frame import *
 
 app = App(
