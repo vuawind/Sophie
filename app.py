@@ -41,7 +41,7 @@ def write_json_option(new_data,section,num, filename='question.json'):
         json.dump(file_data, file, indent = 4)
 
 def wow():
-    xl=pd.ExcelFile('chatbot.xlsx')
+    xl=pd.ExcelFile('chatbot.xlsx',engine='openpyxl')
     sheets_numb = len(xl.sheet_names)
     home_tab = {
         "WELCOME_BLOCK": home()
