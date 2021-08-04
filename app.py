@@ -41,7 +41,7 @@ def write_json_option(new_data,section,num, filename='question.json'):
         json.dump(file_data, file, indent = 4)
 
 def wow():
-    xl=pd.ExcelFile('chatbot.xlsx',engine='openpyxl')
+    xl=pd.ExcelFile('chatbot.xlsx')
     sheets_numb = len(xl.sheet_names)
     home_tab = {
         "WELCOME_BLOCK": home()
@@ -88,8 +88,8 @@ def onboard(event, say, ack, client,body,action):
     header=body['message']['blocks'][0]['text']['text']
     val=action["selected_option"]["value"]
     value=int(val[6:])
-    data = pd.read_excel('chatbot.xlsx',sheet_name=header)
-    df=pd.DataFrame(data, columns=['answers'])
+    data = pd.read_excel('chatbot.xlsx',sheet_name=header,engine='openpyxl')
+    df=pd.DataFrame(data, columns=['answers'],engine='openpyxl')
     ack()
     new=df.iloc[value]['answers'].replace(r'\n', '\n')
     client.chat_postMessage(channel=body['user']['id'], text=f"{new}")
