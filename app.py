@@ -113,9 +113,12 @@ def ask_for_introduction(event, say, client, body):
     user_id = event["user"]['id']
     text2 = f"hugging_face: Xin chào, <@{user_id}> là nhân viên mới đúng không? Hãy hỏi Sophie những điều thắc mắc nhé! (bằng cách bấm vào mục liên quan bên dưới nhé)"
     say(text=text2, channel=user_id)
-    client.chat_postMessage(channel=user_id, blocks=welcome.WELCOME_BLOCK)
-    client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, ngày hôm nay của bạn thế nào? Bạn lưu ý hoàn thành các khóa học E-Learning - Đào tạo hội nhập trong 3 ngày từ ngày gia nhập và Hoàn thiện hồ sơ nhân sự trước 29 nhé. Có thắc mắc khác hãy hỏi Sophie! Chúc bạn luôn vui, khỏe! :grin:", blocks=welcome.WELCOME_BLOCK, post_at=schedule_timestamp1)
-    client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, Bạn đã nghe về 1office? Hmm. Ngày công trên 1office được dùng để tính lương cho chính bạn. Hãy truy cập ngay, kiểm tra và tạo ngày công chính xác để nhận đủ lương tháng. Lưu ý hệ thống chỉ cho phép tạo trong vòng 5 ngày, do đó, bạn cần kiểm tra hàng ngày nhé. Nếu không rõ cách làm, hãy bấm vào mục VII. CHẤM CÔNG - TÍNH LƯƠNG để Sophie hướng dẫn bạn! :v:", blocks=welcome.WELCOME_BLOCK, post_at=schedule_timestamp2)
+    with open('home.json','r+') as file:
+        # First we load existing data into a dict.
+        file_data = json.load(file)
+        client.chat_postMessage(channel=user_id, blocks=file_data["WELCOME_BLOCK"])
+        client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, ngày hôm nay của bạn thế nào? Bạn lưu ý hoàn thành các khóa học E-Learning - Đào tạo hội nhập trong 3 ngày từ ngày gia nhập và Hoàn thiện hồ sơ nhân sự trước 29 nhé. Có thắc mắc khác hãy hỏi Sophie! Chúc bạn luôn vui, khỏe! :grin:", blocks=file_data["WELCOME_BLOCK"], post_at=schedule_timestamp1)
+        client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, Bạn đã nghe về 1office? Hmm. Ngày công trên 1office được dùng để tính lương cho chính bạn. Hãy truy cập ngay, kiểm tra và tạo ngày công chính xác để nhận đủ lương tháng. Lưu ý hệ thống chỉ cho phép tạo trong vòng 5 ngày, do đó, bạn cần kiểm tra hàng ngày nhé. Nếu không rõ cách làm, hãy bấm vào mục VII. CHẤM CÔNG - TÍNH LƯƠNG để Sophie hướng dẫn bạn! :v:", blocks=file_data["WELCOME_BLOCK"], post_at=schedule_timestamp2)
 
 @app.action("submit")
 def other_text(event, say, ack, client,body,action,button):
