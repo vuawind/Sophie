@@ -68,20 +68,26 @@ def wow():
 @app.shortcut("sophie")
 def sophie(event, say, ack, client,shortcut, body):
     ack()
-    with open('home.json','r+') as file:
-          # First we load existing data into a dict.
-        file_data = json.load(file)
-        client.chat_postMessage(channel=shortcut['user']['id'], text=f":hugging_face: Xin chào <@{body['user']['id']}>, Tôi là Sophie - HR Helpdesk. Bạn có câu hỏi nào cho Sophie - Hãy bấm vào mục liên quan bên dưới nhé!")
-        client.chat_postMessage(channel=shortcut['user']['id'], blocks=file_data["WELCOME_BLOCK"])
+    try:
+        with open('home.json','r+') as file:
+            # First we load existing data into a dict.
+            file_data = json.load(file)
+            client.chat_postMessage(channel=shortcut['user']['id'], text=f":hugging_face: Xin chào <@{body['user']['id']}>, Tôi là Sophie - HR Helpdesk. Bạn có câu hỏi nào cho Sophie - Hãy bấm vào mục liên quan bên dưới nhé!")
+            client.chat_postMessage(channel=shortcut['user']['id'], blocks=file_data["WELCOME_BLOCK"])
+    except:
+        print("error")
 
 @app.action("action_id")
 def onboard(event, say, ack, client,body,action):
     ack()
-    with open('question.json','r+') as file:
-          # First we load existing data into a dict.
-        file_data = json.load(file)
-        title = action["selected_option"]["text"]["text"]
-        client.chat_postMessage(channel=body['user']['id'], blocks=file_data[title])
+    try:
+        with open('question.json','r+') as file:
+            # First we load existing data into a dict.
+            file_data = json.load(file)
+            title = action["selected_option"]["text"]["text"]
+            client.chat_postMessage(channel=body['user']['id'], blocks=file_data[title])
+    except:
+        print("error")
 
 @app.action("select")
 def onboard(event, say, ack, client,body,action):
@@ -91,34 +97,45 @@ def onboard(event, say, ack, client,body,action):
     data = pd.read_excel('chatbot.xlsx',sheet_name=header,engine='openpyxl')
     df=pd.DataFrame(data, columns=['answers'])
     ack()
-    new=df.iloc[value]['answers'].replace(r'\n', '\n')
-    client.chat_postMessage(channel=body['user']['id'], text=f"{new}")
+    try:
+        new=df.iloc[value]['answers'].replace(r'\n', '\n')
+        client.chat_postMessage(channel=body['user']['id'], text=f"{new}")
+    except:
+        print("error")
 
 @app.action("back")
 def back(event, say, ack, client,body,action):
     ack()
-    with open('home.json','r+') as file:
-          # First we load existing data into a dict.
-        file_data = json.load(file)
-        client.chat_postMessage(channel=body['user']['id'], text=f":hugging_face: Xin chào <@{body['user']['id']}>, Tôi là Sophie - HR Helpdesk. Bạn có câu hỏi nào cho Sophie - Hãy bấm vào mục liên quan bên dưới nhé!")
-        client.chat_postMessage(channel=body['user']['id'], blocks=file_data["WELCOME_BLOCK"])
+    try:
+        with open('home.json','r+') as file:
+            # First we load existing data into a dict.
+            file_data = json.load(file)
+            client.chat_postMessage(channel=body['user']['id'], text=f":hugging_face: Xin chào <@{body['user']['id']}>, Tôi là Sophie - HR Helpdesk. Bạn có câu hỏi nào cho Sophie - Hãy bấm vào mục liên quan bên dưới nhé!")
+            client.chat_postMessage(channel=body['user']['id'], blocks=file_data["WELCOME_BLOCK"])
+    except:
+        print("error")
 
 @app.event("team_join")
-def ask_for_introduction(event, say, client, body):
+def ask_for_introduction(event, say, client, body, ack):
     day2 = datetime.datetime.today() + datetime.timedelta(days=1)
     day3 = datetime.datetime.today() + datetime.timedelta(days=2)
     scheduled_time = datetime.time(hour=9, minute=30, second=10)
     schedule_timestamp1 = datetime.datetime.combine(day2, scheduled_time).strftime('%s')
     schedule_timestamp2 = datetime.datetime.combine(day3, scheduled_time).strftime('%s')
+    ack()
     user_id = event["user"]['id']
     text2 = f"hugging_face: Xin chào, <@{user_id}> là nhân viên mới đúng không? Hãy hỏi Sophie những điều thắc mắc nhé! (bằng cách bấm vào mục liên quan bên dưới nhé)"
-    say(text=text2, channel=user_id)
-    with open('home.json','r+') as file:
-        # First we load existing data into a dict.
-        file_data = json.load(file)
-        client.chat_postMessage(channel=user_id, blocks=file_data["WELCOME_BLOCK"])
-        client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, ngày hôm nay của bạn thế nào? Bạn lưu ý hoàn thành các khóa học E-Learning - Đào tạo hội nhập trong 3 ngày từ ngày gia nhập và Hoàn thiện hồ sơ nhân sự trước 29 nhé. Có thắc mắc khác hãy hỏi Sophie! Chúc bạn luôn vui, khỏe! :grin:", blocks=file_data["WELCOME_BLOCK"], post_at=schedule_timestamp1)
-        client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, Bạn đã nghe về 1office? Hmm. Ngày công trên 1office được dùng để tính lương cho chính bạn. Hãy truy cập ngay, kiểm tra và tạo ngày công chính xác để nhận đủ lương tháng. Lưu ý hệ thống chỉ cho phép tạo trong vòng 5 ngày, do đó, bạn cần kiểm tra hàng ngày nhé. Nếu không rõ cách làm, hãy bấm vào mục VII. CHẤM CÔNG - TÍNH LƯƠNG để Sophie hướng dẫn bạn! :v:", blocks=file_data["WELCOME_BLOCK"], post_at=schedule_timestamp2)
+    try:
+        say(text=text2, channel=user_id)
+        with open('home.json','r+') as file:
+            # First we load existing data into a dict.
+            file_data = json.load(file)
+            client.chat_postMessage(channel=user_id, blocks=file_data["WELCOME_BLOCK"])
+            client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, ngày hôm nay của bạn thế nào? Bạn lưu ý hoàn thành các khóa học E-Learning - Đào tạo hội nhập trong 3 ngày từ ngày gia nhập và Hoàn thiện hồ sơ nhân sự trước 29 nhé. Có thắc mắc khác hãy hỏi Sophie! Chúc bạn luôn vui, khỏe! :grin:", blocks=file_data["WELCOME_BLOCK"], post_at=schedule_timestamp1)
+            client.chat_scheduleMessage(channel=user_id,text=f"Xin chào, Bạn đã nghe về 1office? Hmm. Ngày công trên 1office được dùng để tính lương cho chính bạn. Hãy truy cập ngay, kiểm tra và tạo ngày công chính xác để nhận đủ lương tháng. Lưu ý hệ thống chỉ cho phép tạo trong vòng 5 ngày, do đó, bạn cần kiểm tra hàng ngày nhé. Nếu không rõ cách làm, hãy bấm vào mục VII. CHẤM CÔNG - TÍNH LƯƠNG để Sophie hướng dẫn bạn! :v:", blocks=file_data["WELCOME_BLOCK"], post_at=schedule_timestamp2)
+    except:
+        print("error")
+
 
 @app.action("submit")
 def other_text(event, say, ack, client,body,action,button):
@@ -126,34 +143,37 @@ def other_text(event, say, ack, client,body,action,button):
     ts = body['message']['ts']
     ack()
     #Nếu như channel của HR đổi thì lấy ID của channel mới rồi thay vào
-    client.chat_postMessage(channel = 'C025751TS0P', text = f"You have a new question from <@{body['user']['id']}>:\n:point_right: {text}")
-    client.chat_update(ts=ts, channel = body['container']['channel_id'], blocks=[
-		{
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": f"Gửi câu hỏi thành công.\nCảm ơn bạn. Phòng Nhân sự sẽ phản hồi bạn trong thời gian sớm nhất!"
-			}
-		},
-		{
-			"type": "actions",
-			"elements": [
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"text": "Back",
-						"emoji": True
-					},
-					"value": "click_back",
-					"action_id": "back"
-				}
-			]
-		},
-		{
-			"type": "divider"
-		}
-	])
+    try:
+        client.chat_postMessage(channel = 'C025751TS0P', text = f"You have a new question from <@{body['user']['id']}>:\n:point_right: {text}")
+        client.chat_update(ts=ts, channel = body['container']['channel_id'], blocks=[
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": f"Gửi câu hỏi thành công.\nCảm ơn bạn. Phòng Nhân sự sẽ phản hồi bạn trong thời gian sớm nhất!"
+                }
+            },
+            {
+                "type": "actions",
+                "elements": [
+                    {
+                        "type": "button",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "Back",
+                            "emoji": True
+                        },
+                        "value": "click_back",
+                        "action_id": "back"
+                    }
+                ]
+            },
+            {
+                "type": "divider"
+            }
+        ])
+    except:
+        print(os.error)
 
 def delete_json():
     jsonFile = open("home.json", "w+")
